@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="first_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ee3ffe26-8e95-4f34-8aef-6a540363ac2d">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="profession" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="196" y="10" width="163" height="30" uuid="594a968a-4f1b-4aea-b94a-332922444a31"/>
+				<textElement textAlignment="Center">
+					<font fontName="Algerian" size="18"/>
+				</textElement>
+				<text><![CDATA[This is the title ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="10" width="140" height="56" uuid="03b982e1-7856-4156-bdca-59ae7559fe7b"/>
+				<imageExpression><![CDATA["C:/jrxml/images/dubai_logo.gif"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="413" y="11" width="140" height="56" uuid="d2d4ed75-c6bc-4458-baac-41310fc9bfde"/>
+				<imageExpression><![CDATA["C:/jrxml/images/dubai_logo.gif"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="39" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="18" width="100" height="24" backcolor="#FA2F20" uuid="e5efdf62-8fd7-458c-9f61-2be292707088"/>
+				<box>
+					<pen lineColor="#F7570C"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="18" width="94" height="24" uuid="724d23ca-6ad1-4be5-bae1-77c07dd31ba0"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="18" width="104" height="24" uuid="b213590f-6666-448b-b531-4e9d8f589d32"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Profession]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="20" width="94" height="24" uuid="a63ff428-798f-4e99-8217-d4fc46a498c6"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="26" y="40" width="69" height="24" uuid="d844cada-1aa4-4208-9fc1-dcdf62a72235"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="40" width="94" height="24" uuid="14399970-e399-41e0-b6f9-1218079fd56c"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="40" width="69" height="24" uuid="b5b0fe03-9b8f-48c6-ba51-c218427028f6"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{profession}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="40" width="108" height="24" uuid="c3094477-bb5e-4d5c-a440-8d7c7f2a1d3e"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="206" y="4" width="143" height="30" uuid="8f3fc192-d977-45cb-8c5b-63b9a3de7198"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face" size="18"/>
+				</textElement>
+				<text><![CDATA[Column Footer]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="206" y="12" width="143" height="30" uuid="3fc8bce9-95e5-4fba-b37c-7b9c7693eed3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face" size="18"/>
+				</textElement>
+				<text><![CDATA[Page Footer]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="6" width="143" height="30" uuid="0cbc9213-7c81-4916-81cb-3821b1fee30e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Baskerville Old Face" size="18"/>
+				</textElement>
+				<text><![CDATA[Summary]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
